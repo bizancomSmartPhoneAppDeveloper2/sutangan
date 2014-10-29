@@ -14,6 +14,7 @@
 		87F2245119ECE47C0008DC81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F2245019ECE47C0008DC81 /* Images.xcassets */; };
 		87F2245419ECE47C0008DC81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87F2245219ECE47C0008DC81 /* LaunchScreen.xib */; };
 		87F2246019ECE47C0008DC81 /* feel_so_goodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2245F19ECE47C0008DC81 /* feel_so_goodTests.m */; };
+		87F4784E19F1222A00442EE5 /* sutan.saidai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87F4784D19F1222A00442EE5 /* sutan.saidai.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		873A5C5F19EE467B00305718 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		87F2244019ECE47C0008DC81 /* feel so good.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "feel so good.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F2244419ECE47C0008DC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87F2244519ECE47C0008DC81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		87F2245919ECE47C0008DC81 /* feel so goodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "feel so goodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F2245E19ECE47C0008DC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87F2245F19ECE47C0008DC81 /* feel_so_goodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = feel_so_goodTests.m; sourceTree = "<group>"; };
+		87F2246919ECE4C00008DC81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		87F4784D19F1222A00442EE5 /* sutan.saidai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sutan.saidai.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		87F2243719ECE47C0008DC81 = {
 			isa = PBXGroup;
 			children = (
+				873A5C5F19EE467B00305718 /* AVFoundation.framework */,
+				87F2246919ECE4C00008DC81 /* AudioToolbox.framework */,
 				87F2244219ECE47C0008DC81 /* feel so good */,
 				87F2245C19ECE47C0008DC81 /* feel so goodTests */,
 				87F2244119ECE47C0008DC81 /* Products */,
@@ -96,6 +102,7 @@
 		87F2244319ECE47C0008DC81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				87F4784D19F1222A00442EE5 /* sutan.saidai.mp3 */,
 				87F2244419ECE47C0008DC81 /* Info.plist */,
 				87F2244519ECE47C0008DC81 /* main.m */,
 			);
@@ -168,6 +175,7 @@
 				TargetAttributes = {
 					87F2243F19ECE47C0008DC81 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Z79AM3Z6RT;
 					};
 					87F2245819ECE47C0008DC81 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -201,6 +209,7 @@
 			files = (
 				87F2244F19ECE47C0008DC81 /* Main.storyboard in Resources */,
 				87F2245419ECE47C0008DC81 /* LaunchScreen.xib in Resources */,
+				87F4784E19F1222A00442EE5 /* sutan.saidai.mp3 in Resources */,
 				87F2245119ECE47C0008DC81 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +352,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "feel so good/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +364,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "feel so good/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +425,7 @@
 				87F2246519ECE47C0008DC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87F2246619ECE47C0008DC81 /* Build configuration list for PBXNativeTarget "feel so goodTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +434,7 @@
 				87F2246819ECE47C0008DC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
